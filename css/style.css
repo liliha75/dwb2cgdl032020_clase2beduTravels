@@ -1,0 +1,143 @@
+body{
+
+    background-color: black;
+}
+
+.menu{
+
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    
+}
+
+
+.logoB{
+
+    height: 30px;
+    display: block;
+    margin: auto 10px;
+
+}
+
+.menu-list{
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    display: flex;
+
+    
+}
+
+.menu-list a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    display:block;
+    margin: 0 20px 0 0px;
+}
+
+.mainSec{
+
+   background-image: url("../Imagenes/img_cover_home.jpg");
+   background-repeat: no-repeat;
+  
+   background-size: 100%; 
+   height: 40vmax;
+    display: block;
+    margin-top: 0;
+    padding-top: 100px;
+    margin-bottom: 0;
+   
+
+  
+}
+
+.mainSec *{
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   
+
+    text-align: center;
+    display: block;
+   
+
+    
+   
+}
+
+
+
+
+
+.buscar {
+
+    display: flex;
+    height: 200px;
+  
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+
+
+}
+
+.buscar input{
+
+    height: 30px;
+}
+
+.buscar button{
+
+    background-image: url("../Imagenes/searchIcon.png");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-left: -10px;
+   
+    display: inline-block;
+   
+}
+
+.footer{
+background-color: black;
+height: 100px;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.footer h5{
+
+    margin: 0 10px;
+}
+
+.footer p{
+    margin:0 10px;
+}
+
+.footer figure{
+
+   position: relative;
+   left: 200px;
+   bottom: 50px;
+   display: inline-block;
+   margin-left: 0;
+   
+    
+}
+
+.footer a{
+
+   display: block;
+    width: 30px;
+
+    
+   
+}
