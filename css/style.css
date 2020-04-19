@@ -42,21 +42,23 @@ body{
 
 .mainSec{
 
-   background-image: url("../Imagenes/img_cover_home.jpg");
-   background-repeat: no-repeat;
-  
-   background-size: 100%; 
-   height: 40vmax;
-    display: block;
-    margin-top: 0;
-    padding-top: 100px;
-    margin-bottom: 0;
+    background-image: url("../Imagenes/img_cover_home.jpg");
+    background-repeat: no-repeat;
+   /* background-size: contain; o 100px auto, backgorund-size:contain la reduce hasta que la pueda contener*/
+    background-position: center;
+    background-size: cover;
+    height: 40vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+ 
    
 
   
 }
 
-.mainSec *{
+.mainSec-content{
 
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -104,33 +106,157 @@ body{
    
 }
 
+.destinos{
+
+    background-color: white;
+    height: 60%;
+   
+   
+
+}
+
+.destinosText{
+
+        text-align: center;
+        font-family: sans-serif;
+        padding-top: 20px;
+        height: 60px;
+      
+   
+}
+
+.destinosText h2,
+.destinosText p {
+
+    margin: 0 auto;
+}
+
+
+.containerDestinos{
+
+    display: grid;
+    border: 1px red solid;
+    margin: 30px auto;
+    width: 90%;
+  
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6 / 10%);
+
+    grid-gap: 10px;
+}
+
+.item{
+
+    border: 1px blue solid;
+    font-family: sans-serif;
+    display: flex;
+   
+   
+}
+
+.mexico{
+    grid-column: 1 / 6;
+    grid-row: 1/2;
+   
+
+
+}
+
+.item img{
+
+    width: 300px;
+      border: 10px green solid;
+  
+    
+
+
+}
+
+.info{
+
+    margin: 10px 10px;
+}
+
+#otrosMex1{
+
+    grid-column: 2/3;
+    text-align: center;
+  
+    background-image: url(../Imagenes/rivieraM.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+
+
+}
+
+#otrosMex2{
+
+    grid-column: 3/4;
+    text-align: center;
+    background-image: url(../Imagenes/ciudades.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+
+}
+
+#otrosMex3{
+
+    grid-column: 4/5;
+    text-align: center;
+    background-image: url(../Imagenes/museos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+
+}
+
+#europa{
+
+    grid-row: 3/4;
+    grid-column: 1/6;
+
+
+}
+#norteamerica{
+
+    grid-row: 4/5;
+    grid-column: 1/6;
+
+
+
+}
+#asia{
+
+    grid-row: 5/6;
+    grid-column: 1/6;
+
+
+
+}
+
+
+
+
+
 .footer{
 background-color: black;
 height: 100px;
 color: white;
 font-family: Arial, Helvetica, sans-serif;
+display: flex;
+justify-content: space-between;
+align-items: center;
 
 
 }
 
-.footer h5{
 
-    margin: 0 10px;
-}
+.icons{
+     display: flex;
+     margin-right: 20px;
 
-.footer p{
-    margin:0 10px;
-}
-
-.footer figure{
-
-   position: relative;
-   left: 200px;
-   bottom: 50px;
-   display: inline-block;
-   margin-left: 0;
-   
-    
 }
 
 .footer a{
