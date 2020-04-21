@@ -64,9 +64,9 @@ body{
 
     text-align: center;
     display: block;
-    width: 90%;
+   
     margin: auto;
-    height: 40vmax;
+    height: 50%;
    
 
     
@@ -120,7 +120,7 @@ body{
 .destinos{
 
     background-color: white;
-    height: 60%;
+    border: 1px blue solid;
    
    
 
@@ -132,6 +132,7 @@ body{
         font-family: sans-serif;
         padding-top: 40px;
         height: 60px;
+        border: 1px black solid;
       
    
 }
@@ -147,14 +148,15 @@ body{
 
     display: grid;
     border: 1px red solid;
-    margin: 5em auto 10em auto;
+   margin: auto;
     width: 90%;
+    
 
  
  
   
-    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(5 , 1fr);
+    grid-template-columns:  repeat (5,1fr);
+    grid-template-rows: repeat (5 , 1fr);
 
     grid-gap: 1%;
     
@@ -165,8 +167,8 @@ body{
     border: 1px blue solid;
     font-family: sans-serif;
     display: flex;
-    align-items: start;
-   
+    align-items: center;
+
    
 }
 
@@ -209,6 +211,7 @@ body{
 #otrosMex1{
 
     grid-column: 2/3;
+    grid-row: 2/3;
    
    
 }
@@ -216,13 +219,14 @@ body{
 #otrosMex2{
 
     grid-column: 3/4;
+    grid-row: 2/3;
   
 }
 
 #otrosMex3{
 
     grid-column: 4/5;
-   
+    grid-row: 2/3;
 }
 
 #europa{
@@ -255,7 +259,6 @@ body{
 
 .footer{
 background-color: black;
-
 color: white;
 font-family: Arial, Helvetica, sans-serif;
 display: flex;
