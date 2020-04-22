@@ -65,8 +65,8 @@ body{
     text-align: center;
     display: block;
    
-    margin: auto;
-    height: 50%;
+    margin:10% auto;
+    height: 40%vmax;
    
 
     
@@ -119,9 +119,10 @@ body{
 
 .destinos{
 
-    background-color: white;
+    background-color:white;
     border: 1px blue solid;
-   
+    height: 200%vh;
+  
    
 
 }
@@ -130,8 +131,8 @@ body{
 
         text-align: center;
         font-family: sans-serif;
-        padding-top: 40px;
-        height: 60px;
+        margin: 5% auto 2% auto;
+
         border: 1px black solid;
       
    
@@ -140,7 +141,7 @@ body{
 .destinosText h2,
 .destinosText p {
 
-    margin: 0 auto;
+    margin: 0;
 }
 
 
@@ -148,13 +149,8 @@ body{
 
     display: grid;
     border: 1px red solid;
-   margin: auto;
+    margin: 2% auto;
     width: 90%;
-    
-
- 
- 
-  
     grid-template-columns:  repeat (5,1fr);
     grid-template-rows: repeat (5 , 1fr);
 
@@ -285,7 +281,17 @@ margin: auto;
 }
 
 
+.destinosIcons{
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+}
+.destinosIcons span{
+
+    font-size: 5em;
+}
 
 
 /*hamburguer menu*/
@@ -305,6 +311,11 @@ margin: auto;
     nav{
 
         display: none;
+    }
+
+    .destinoIcons{
+
+        flex-direction: column;
     }
 
 
